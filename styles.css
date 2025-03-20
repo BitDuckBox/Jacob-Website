@@ -1,7 +1,8 @@
 body {background-color:deepskyblue; font-family:helvetica;}
-h1 {background-color: skyblue;}
-p  {background-color: lightskyblue;}
-
+h1 {background-color: skyblue; font-size:50px;}
+h2{font-size:40px; background-color:skyblue;}
+p  {background-color: lightskyblue; font-size:25;}
+ th, td {border: 3px dotted; background-color: cornsilk; padding:4px; border-collapse:collapse; border-radius:5px; border-color:red purple red purple;}
 
 a:hover, a:active {
   background-color: red;
