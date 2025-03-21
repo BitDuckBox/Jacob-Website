@@ -13,9 +13,39 @@
                 background-attachment: fixed;  
                 background-size: cover;
             }
+
+            ul {
+                list-style-type: none;
+                margin: -7px;
+                padding: 0px;
+                overflow: hidden;
+                background-color: blueviolet;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: lightyellow;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: grey;
+            }
+
+            html { scroll-behavior: smooth;}
         </style>
     </head>
     <body style="text-align:center;">
+        <ul id="Top">
+            <li><a href="#MyTasks">My Tasks</a></li>
+            <li><a href="#CollegeSchedule">College Schedule</a></li>
+        </ul>
         <h1 title="Good question">Who am I?</h1>
         <p>I am a student at <a href="https://www.west-thames.ac.uk/"target="_blank" style="text-decoration:none;"><b>West Thames college</b></a> 
             enrolled in a course in Level 3 BTEC in computing</p> <!-- explanation about myself -->
@@ -29,23 +59,15 @@
         <img style="border:3px solid brown; margin:5px; float:left; width:384px; height:512px;" src="attachments/IMG_20250314_142830.jpg" alt="A large telescope">
         <img style="border:3px solid brown; margin:5px; float:left; width:384px; height:512px;" src="attachments/IMG_20250314_145839.jpg" alt="meteorite fragment">
         <img style="border:3px solid brown; margin:5px; float:left; width:390.9px; height:521.1px;" src="attachments/IMG_20250314_151115.jpg" alt="Squirrel">
-        <p style="border:3px solid greenyellow;">I took these at greenich in london near the Royal Observatory except from the moon.</p>
+        <p style="width: 250px; border: 3px solid yellowgreen; background-color: lightskyblue; float: right;">
+            I took these pictures at greenich in london near the Royal Observatory. Except from the moon picture i took near my house.
+        </p>
         <img style="border:3px solid brown; margin:5px; float:left; width:410.4px; height:327.2px;" src="attachments/IMG_20250313_193139.jpg" alt="The moon">
         <img style="border:3px solid brown; margin:5px; float:left; width:456px; height:342px;" src="attachments/IMG_20250314_160113.jpg" alt="The city 4">
         <hr style="clear:left;">
-
         
-        <!--<picture>
-            <source media="(max-width:660px)" srcset="attachments/IMG_20250314_142830_small.jpg"> <!~~ broken ~~>
-            <img style="border:3px solid brown; margin:5px; float:left; width:384px; height:512px;" src="attachments/IMG_20250314_142830.jpg" alt="Test image"> 
-        </picture>-->
         
-            <!-- add more pictures here of my own -->
-        <p style="text-align:left; background-color:transparent;">
-            <a href="mailto:jacob.nc.hull@gmail.com">Send me an email about improvments i could make.</a><br>
-            <button onclick="document.location='test_page2.html'" style="padding:5px;">next page</button>
-        </p>
-        <h2>My Calender</h2>
+        <h2 id="MyTasks">My Calender</h2>
         <table style="color:green; width:50%;">
             <tr style="background-color: burlywood;">
                 <th>Task</th>
@@ -58,8 +80,8 @@
                 <td>20/03/2025</td>
             </tr>
         </table>
-        <!-- FULL TESTING -->
-        <h2>College Schedule</h2>
+        <!-- Big table containing my College Lesson Schedule -->
+        <h2 id="CollegeSchedule">College Schedule</h2>
 
         <table style="text-align:right; font-size:17px; width:100%;">
             <caption style="color:lightgreen">My Schedule for College.</caption>
@@ -100,6 +122,13 @@
                 <td>Unit 1 Computing. Madhura. B334</td>
             </tr>
         </table>
-        <p><br><br><br><br><br><br><br><br><br><br><br></p>
+
+        <p style="text-align:left; background-color:transparent; float: left;">
+            <a href="mailto:jacob.nc.hull@gmail.com" target="_blank" style="color:greenyellow;">Send me an email about improvments i could make.</a><br>
+            <button onclick="document.location='test_page2.html'" style="padding:5px;">next page</button>
+        </p>
+        <p style="border: 3px solid grey; width:110px; float: right; background-color: blueviolet; padding: 2px;">
+            <a href="#Top" style="text-decoration: none; color: lightyellow; ">To top of page</a>
+        </p>
     </body>
 </html>
