@@ -1,0 +1,29 @@
+body {background-color:deepskyblue; font-family:helvetica;}
+h1 {background-color: skyblue; font-size:50px;}
+h2{font-size:40px; background-color:skyblue;}
+p  {background-color: lightskyblue; font-size:25;}
+th, td {
+  border: 3px dotted; 
+  background-color:none;
+  padding:5px; border-collapse:collapse; 
+  border-radius:5px; 
+  border-color:red purple red purple;
+}
+
+tr:nth-child(even) {
+  background-color:beige;
+}
+
+tr:nth-child(odd) {
+  background-color:blanchedalmond;
+}
+
+th:hover, td:hover { background-color:cyan;}
+
+table{
+  border-spacing:3px;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
